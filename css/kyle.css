@@ -1,17 +1,21 @@
 @font-face {
-    font-family: 'SwIS';
-    src: url('../fonts/swis-bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
+    font-family: 'SwIS';
+    src: url('../fonts/swis-bold.otf') format('opentype');
 }
 body{
     background-color: #eee;
+    color:#555;
     font-family: 'SwIS' Arial;
 }
+a{
+    color:rgb(88,191,144);
+}
 .funstuff{
+    margin:0 auto;
     color:#cdcdcd;
     text-align:center;
-    margin:0 auto;
 }
 .container{
     margin-top:-150px;
@@ -19,24 +23,41 @@ body{
 .arrow{
     position:fixed;
     bottom:0;
-    opacity:1;
-    margin:0 auto;
     left:35%;
+    margin:0 auto;
     width:30%;
-}
-header{
-    position:relative;
+    opacity:1;
 }
 .topHeader{
     font-size: 64px;
 }
 .tagline{
-    position:absolute;
-    bottom:0;
+    margin-top:70px;
 }
 section.explain{
     margin-bottom:20px;
-    border-bottom: dashed rgb(88,191,144) 3px;
-    border-top: dashed rgb(88,191,144) 3px;
     padding:20px 0;
+    border-top: dashed rgb(88,191,144) 3px;
+    border-bottom: dashed rgb(88,191,144) 3px;
+}
+.hero{
+    color:#888;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: -1px -1px #222, 1px 1px #eee;
+    font-size: 58px;
+}
+.byline{
+    color:#777;
+}
+
+@media screen and (max-width: 990px) {
+
+    body{
+        text-align: justify;
+    }
+    .tagline{
+        margin-top: 10px;
+    }
+
 }
